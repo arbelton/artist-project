@@ -7,6 +7,13 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/coverexo.jpeg");
@@ -50,6 +57,45 @@ header a {
   padding: 16px 20px;
   display: inline-block;
 }
+section {
+  max-width: 100%;
+  margin: 0 auto;
+}
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/fandom2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff8e7;
+
+  width: 1512px;
+  height: 334px;
+  left: 0px;
+  top: 3742px;
+}
+footer h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.5;
+  line-height: 20px;
+}
+footer ul {
+  padding: 0;
+}
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  color: #fff8e7;
+  opacity: 0.5;
+}
 @media (max-width: 800px) {
   header {
     padding: 60px 0;
@@ -62,5 +108,8 @@ header a {
   }
   header h3 {
     font-size: 12px;
+  }
+  section {
+    padding: 30px;
   }
 }
