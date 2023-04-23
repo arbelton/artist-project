@@ -7,9 +7,16 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.img-responsive {
+  width: 100%;
+  display: block;
+}
 .grid {
   display: grid;
   grid-gap: 60px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
@@ -61,17 +68,39 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
+main {
+  background-color: black;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #fff8e7;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff8e7;
+  margin: 0;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff8e6;
+  opacity: 0.7;
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/fandom2.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff8e7;
-
-  width: 1512px;
-  height: 334px;
-  left: 0px;
-  top: 3742px;
 }
 footer h4 {
   font-weight: 700;
@@ -111,5 +140,9 @@ footer a {
   }
   section {
     padding: 30px;
+  }
+  .grid {
+    grid-template-columns: 1 fr;
+    grid-gap: 32px;
   }
 }
