@@ -7,10 +7,49 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+.embed {
+  width: 500px;
+  height: 500px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 0;
+  color: #fff8e6;
+  border-radius: 15px;
+  text-align: center;
+}
+.card-song-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/exomonster.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-song-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/exosweet.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-header .grid {
+  grid-gap: 0;
+}
+.card thumbnail {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  text-decoration: none;
+}
 .img-responsive {
   width: 100%;
   display: block;
 }
+
 .grid {
   display: grid;
   grid-gap: 60px;
@@ -20,6 +59,32 @@ body {
 }
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.thumbnail {
+  border-radius: 8px;
+  max-width: 100%;
+  transition: all 150ms ease-in-out;
+  border: 2px solid white;
+}
+.thumbnail:hover {
+  filter: invert(10%);
+  transform: scale(1.2);
+}
+.btn {
+  display: block;
+  border-radius: 10px;
+  color: #fff8e6;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+
+  padding: 7px 10px;
+  background-color: #5c6ba9;
+  text-decoration: none;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -60,16 +125,16 @@ header a {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff8e6;
-  background-color: #bcb785;
+  background-color: #534e79;
   padding: 16px 20px;
   display: inline-block;
 }
 section {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px;
 }
 main {
-  background-color: black;
+  background-color: rgb(225, 225, 225, 0);
 }
 main h2 {
   font-weight: 700;
@@ -95,6 +160,24 @@ main p {
   color: #fff8e6;
   opacity: 0.7;
 }
+.secondary h2 {
+  font-weight: 700;
+  font-size: 46px;
+  text-align: center;
+}
+.scondary h3 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+.secondary h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.secondary p {
+  font-size: 18px;
+  color: rgba(235, 102, 153, 0.6);
+}
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/fandom2.png");
@@ -117,6 +200,7 @@ footer ul {
   padding: 0;
 }
 footer li {
+  text-decoration: none;
   list-style: none;
   margin: 0;
   padding: 0;
