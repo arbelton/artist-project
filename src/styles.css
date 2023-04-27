@@ -225,8 +225,19 @@ footer a {
   section {
     padding: 30px;
   }
+  main {
+    font-size: 30px;
+  }
+  .embed {
+    max-width: 80%;
+    max-height: 50%;
+  }
+  .card {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
   .grid {
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr;
     grid-gap: 32px;
   }
 }
