@@ -55,6 +55,7 @@ body {
 .instagram-gallery h3 {
   font-weight: 700;
   font-size: 42px;
+  letter-spacing: 3px;
 }
 .grid {
   display: grid;
